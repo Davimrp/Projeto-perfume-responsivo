@@ -25,11 +25,11 @@ body{
 
 }
 .esquerda{
-    width: 50%;
+    width: 50vw;
 }
 .direita{
     padding-left: 20px;
-    width: 50%;
+    width: 50vw;
 }
 
 h2{
@@ -68,7 +68,6 @@ p{
 }
 
 button{
-    display: flex;
     margin-left: 30px;
     background-color: rgb(16, 37, 22);
     border-radius: 5px;
@@ -90,4 +89,43 @@ a{
     color: white;
 }
 
+@media only screen and (max-width: 650px){
+    .container{
+            margin-top: 100px;
+            flex-direction: column; 
+            max-width: 650px;
+            min-width: 300px;
+          
+    }
+    .esquerda{
+     width: 100vw;
+     margin: 30px auto;
  
+    }
+    .direita{
+        width: 100vw;
+        margin: auto;
+    }
+    img{
+        max-height: 380px;        
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+    button{
+        width: 80%;
+        margin-bottom: 15px;
+        
+    }
+    button p{
+    margin: auto;
+    }
+
+    h2, h3, p{
+        margin: 15px;
+        text-align: center;
+    }
+    .preco{
+        justify-content: center;
+    }
+    }
